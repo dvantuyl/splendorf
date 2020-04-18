@@ -1,0 +1,256 @@
+.card-component {
+  position: relative;
+  width: 15%;
+  border-radius: 5px;
+  box-shadow: 0px 6px 15px 2px rgba(0, 0, 0, 0.24);
+
+  &.hide {
+    visibility: hidden;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+
+    .card-head {
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      );
+      background-size: 400% 400%;
+      animation: Hover 0.5s linear 0s 1;
+
+      @keyframes Hover {
+        from {
+          background-position: 100% 100%;
+        }
+        to {
+          background-position: 0 0;
+        }
+      }
+    }
+
+    .card-body {
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      );
+      background-size: 400% 400%;
+      animation: Hover 0.4s linear 0s 1;
+
+      @keyframes Hover {
+        from {
+          background-position: 100% 100%;
+        }
+        to {
+          background-position: 0 0;
+        }
+      }
+    }
+  }
+
+  .background-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: center/cover no-repeat;
+
+    &.bk-2 {
+      background-image: url('./images/backgrounds/bk-2.jpg');
+    }
+    &.wh-2 {
+      background-image: url('./images/backgrounds/wh-2.jpg');
+    }
+    &.re-2 {
+      background-image: url('./images/backgrounds/re-2.jpg');
+    }
+    &.gr-2 {
+      background-image: url('./images/backgrounds/gr-2.jpg');
+    }
+    &.bl-2 {
+      background-image: url('./images/backgrounds/bl-2.jpg');
+    }
+    &.bk-1 {
+      background-image: url('./images/backgrounds/bk-1.jpg');
+    }
+    &.wh-1 {
+      background-image: url('./images/backgrounds/wh-1.jpg');
+    }
+    &.re-1 {
+      background-image: url('./images/backgrounds/re-1.jpg');
+    }
+    &.gr-1 {
+      background-image: url('./images/backgrounds/gr-1.jpg');
+    }
+    &.bl-1 {
+      background-image: url('./images/backgrounds/bl-1.jpg');
+    }
+    &.bk-0 {
+      background-image: url('./images/backgrounds/bk-0.jpg');
+    }
+    &.wh-0 {
+      background-image: url('./images/backgrounds/wh-0.jpg');
+    }
+    &.re-0 {
+      background-image: url('./images/backgrounds/re-0.jpg');
+    }
+    &.gr-0 {
+      background-image: url('./images/backgrounds/gr-0.jpg');
+    }
+    &.bl-0 {
+      background-image: url('./images/backgrounds/bl-0.jpg');
+    }
+  }
+
+  .card-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+    &.card-bk {
+      background-color: rgba(0, 0, 0, 0.6);
+      .token.bk {
+        border: 1px solid white;
+      }
+    }
+    &.card-wh {
+      background-color: rgba(253, 245, 230, 0.6);
+      .token.wh {
+        border: 1px solid black;
+      }
+    }
+    &.card-re {
+      background-color: rgba(255, 0, 0, 0.75);
+      .token.re {
+        border: 1px solid white;
+      }
+      .card-jewel-svg {
+        fill: red;
+      }
+    }
+    &.card-gr {
+      background-color: rgba(0, 128, 0, 0.75);
+      .token.gr {
+        border: 1px solid white;
+      }
+      .card-jewel-svg {
+        fill: green;
+      }
+    }
+    &.card-bl {
+      background-color: rgba(0, 0, 255, 0.75);
+      .token.bl {
+        border: 1px solid white;
+      }
+      .card-jewel-svg {
+        fill: blue;
+      }
+    }
+
+    .card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0.5rem;
+      width: 100%;
+      height: 25%;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 5px 5px 0 0;
+
+      .card-pts {
+        font-size: 3vh;
+        font-weight: bold;
+        width: 20%;
+        color: black;
+        text-shadow: 0px 0px 6px #ffffff;
+        text-align: center;
+        font-family: 'Norican', cursive;
+      }
+
+      .card-jewel {
+        width: 20%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &.bk {
+          background-image: url('./images/jewels/bk.png');
+        }
+        &.wh {
+          background-image: url('./images/jewels/wh.png');
+        }
+        &.re {
+          background-image: url('./images/jewels/re.png');
+        }
+        &.gr {
+          background-image: url('./images/jewels/gr.png');
+        }
+        &.bl {
+          background-image: url('./images/jewels/bl.png');
+        }
+      }
+    }
+
+    .card-body {
+      box-sizing: border-box;
+      height: 75%;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .token {
+        position: relative;
+        border-radius: 50%;
+        width: 18%;
+        margin-top: 5%;
+        padding-top: 18%;
+        height: 0;
+
+        &.bk {
+          background-color: black;
+          color: white;
+        }
+        &.wh {
+          background-color: oldlace;
+          color: black;
+        }
+        &.re {
+          background-color: red;
+          color: white;
+        }
+        &.gr {
+          background-color: green;
+          color: white;
+        }
+        &.bl {
+          background-color: blue;
+          color: white;
+        }
+        .count {
+          font-weight: bold;
+          position: absolute;
+          top: calc(50% - 1.2vh);
+          width: 100%;
+          text-align: center;
+          font-size: 2vh;
+        }
+      }
+    }
+  }
+}

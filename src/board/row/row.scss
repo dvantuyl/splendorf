@@ -1,0 +1,14 @@
+#row-component-2 {
+  grid-area: row-2;
+}
+#row-component-1 {
+  grid-area: row-1;
+}
+#row-component-0 {
+  grid-area: row-0;
+}
+
+.row-component {
+  display: flex;
+  justify-content: space-between;
+}

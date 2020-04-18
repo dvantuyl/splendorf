@@ -1,0 +1,71 @@
+.hold-viewer-component {
+  box-sizing: border-box;
+  width: 80%;
+  height: 100%;
+  padding-left: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+
+  .left-arrow,
+  .right-arrow {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-size: 2vw;
+
+    &:hover {
+      color: white;
+      transform: scale(1.2);
+    }
+
+    &.show {
+      visibility: visible;
+    }
+    &.hide {
+      visibility: hidden;
+    }
+  }
+  .left-arrow {
+    transform: rotate(180deg);
+    &:hover {
+      transform: rotate(180deg) scale(1.2);
+    }
+  }
+
+  .hold-collection-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    .card-component {
+      width: 80%;
+      height: 100%;
+      box-shadow: none;
+
+      &:hover {
+        transform: none;
+      }
+
+      .card-head,
+      .card-body {
+        padding: 0.2rem;
+      }
+      .card-head {
+        .card-pts {
+          font-size: 2vh;
+        }
+      }
+      .card-body .token .count {
+        font-size: 1.5vh;
+      }
+      .card-actions-component {
+        visibility: visible;
+        .btn {
+          padding: 0.5vh 0.3vw;
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.player-component {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(25% - 0.75rem);
+  border-radius: 5px;
+
+  @keyframes Pulse {
+    0% {
+      box-shadow: 0 0 0 rgba(255, 255, 255, 1);
+    }
+
+    50% {
+      box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    }
+
+    100% {
+      box-shadow: 0 0 0 rgba(255, 255, 255, 1);
+    }
+  }
+
+  @keyframes Warn {
+    0% {
+      box-shadow: 0 0 0 rgba(254, 1, 0, 1);
+    }
+
+    50% {
+      box-shadow: 0 0 20px rgba(254, 1, 0, 1);
+    }
+
+    100% {
+      box-shadow: 0 0 0 rgba(254, 1, 0, 1);
+    }
+  }
+
+  @keyframes BigTen {
+    0% {
+      visibility: visible;
+      font-size: 0vh;
+      opacity: 1;
+    }
+    80% {
+      visibility: visible;
+      font-size: 20vh;
+      opacity: 1;
+    }
+    100% {
+      visibility: hidden;
+      font-size: 20vh;
+      opacity: 0;
+    }
+  }
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  &.current {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    animation: Pulse 1s ease infinite;
+  }
+
+  .player-head {
+    height: 25%;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .name {
+      font-family: 'Norican', cursive;
+      font-size: 3vh;
+      font-weight: bold;
+      text-shadow: 0px 0px 6px #ffffff;
+    }
+
+    .score {
+      color: black;
+      text-shadow: 0px 0px 6px #ffffff;
+      text-align: right;
+      font-family: 'Norican', cursive;
+      font-size: 3vh;
+      font-weight: bold;
+    }
+  }
+
+  .player-body {
+    position: relative;
+    height: 75%;
+    box-sizing: border-box;
+    padding: 1rem;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0 0 5px 5px;
+
+    .resource-components {
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+
+      &.show {
+        display: flex;
+      }
+
+      &.hide {
+        display: none;
+      }
+    }
+
+    .big-ten {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      visibility: hidden;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: rgba(254, 1, 0, 0.5);
+      animation: BigTen 2s ease 1;
+    }
+  }
+}
