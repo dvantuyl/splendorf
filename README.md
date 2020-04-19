@@ -1,3 +1,5 @@
+# Splendorf
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -37,8 +39,46 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `yarn sass`
+
+Generates all *.scss => *.css files in /src/baord directory. This is for the FreeboardGames.org integration (which can not read *.scss files).
+
+## FreeBoardGames.org Integration
+
+### Setup
+
+1. Clone breadbeard fork of FreeBoardGames.org with hydrated breadbeard game submodules:
+```console
+$ git clone --recurse-submodules https://github.com/breadbeard/FreeBoardGames.org.git
+```
+
+2. Enter directory:
+```console
+$ cd FreeBoardGames.org
+```
+
+3. Install dependencies:
+```console
+$ yarn install
+```
+
+4. Start dev FreeBoardGames.org lobbie server and Boardgames.io game server:
+```console
+$ yarn run dev
+```
+
+### More Information
+
+* Git Submodules: https://git-scm.com/book/en/v2/Git-Tools-Submodules
+* FBG Game Creation: https://www.freeboardgames.org/blog/
+
+
+
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+

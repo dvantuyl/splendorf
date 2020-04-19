@@ -1,0 +1,170 @@
+.card-component {
+  position: relative;
+  width: 15%;
+  border-radius: 5px;
+  box-shadow: 0px 6px 15px 2px rgba(0, 0, 0, 0.24); }
+  .card-component.hide {
+    visibility: hidden; }
+  .card-component:hover {
+    transform: scale(1.1); }
+    .card-component:hover .card-head {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+      background-size: 400% 400%;
+      animation: Hover 0.5s linear 0s 1; }
+
+@keyframes Hover {
+  from {
+    background-position: 100% 100%; }
+  to {
+    background-position: 0 0; } }
+    .card-component:hover .card-body {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+      background-size: 400% 400%;
+      animation: Hover 0.4s linear 0s 1; }
+
+@keyframes Hover {
+  from {
+    background-position: 100% 100%; }
+  to {
+    background-position: 0 0; } }
+  .card-component .background-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: center/cover no-repeat; }
+    .card-component .background-image-container.bk-2 {
+      background-image: url("./images/backgrounds/bk-2.jpg"); }
+    .card-component .background-image-container.wh-2 {
+      background-image: url("./images/backgrounds/wh-2.jpg"); }
+    .card-component .background-image-container.re-2 {
+      background-image: url("./images/backgrounds/re-2.jpg"); }
+    .card-component .background-image-container.gr-2 {
+      background-image: url("./images/backgrounds/gr-2.jpg"); }
+    .card-component .background-image-container.bl-2 {
+      background-image: url("./images/backgrounds/bl-2.jpg"); }
+    .card-component .background-image-container.bk-1 {
+      background-image: url("./images/backgrounds/bk-1.jpg"); }
+    .card-component .background-image-container.wh-1 {
+      background-image: url("./images/backgrounds/wh-1.jpg"); }
+    .card-component .background-image-container.re-1 {
+      background-image: url("./images/backgrounds/re-1.jpg"); }
+    .card-component .background-image-container.gr-1 {
+      background-image: url("./images/backgrounds/gr-1.jpg"); }
+    .card-component .background-image-container.bl-1 {
+      background-image: url("./images/backgrounds/bl-1.jpg"); }
+    .card-component .background-image-container.bk-0 {
+      background-image: url("./images/backgrounds/bk-0.jpg"); }
+    .card-component .background-image-container.wh-0 {
+      background-image: url("./images/backgrounds/wh-0.jpg"); }
+    .card-component .background-image-container.re-0 {
+      background-image: url("./images/backgrounds/re-0.jpg"); }
+    .card-component .background-image-container.gr-0 {
+      background-image: url("./images/backgrounds/gr-0.jpg"); }
+    .card-component .background-image-container.bl-0 {
+      background-image: url("./images/backgrounds/bl-0.jpg"); }
+  .card-component .card-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; }
+    .card-component .card-container.card-bk {
+      background-color: rgba(0, 0, 0, 0.6); }
+      .card-component .card-container.card-bk .token.bk {
+        border: 1px solid white; }
+    .card-component .card-container.card-wh {
+      background-color: rgba(253, 245, 230, 0.6); }
+      .card-component .card-container.card-wh .token.wh {
+        border: 1px solid black; }
+    .card-component .card-container.card-re {
+      background-color: rgba(255, 0, 0, 0.75); }
+      .card-component .card-container.card-re .token.re {
+        border: 1px solid white; }
+      .card-component .card-container.card-re .card-jewel-svg {
+        fill: red; }
+    .card-component .card-container.card-gr {
+      background-color: rgba(0, 128, 0, 0.75); }
+      .card-component .card-container.card-gr .token.gr {
+        border: 1px solid white; }
+      .card-component .card-container.card-gr .card-jewel-svg {
+        fill: green; }
+    .card-component .card-container.card-bl {
+      background-color: rgba(0, 0, 255, 0.75); }
+      .card-component .card-container.card-bl .token.bl {
+        border: 1px solid white; }
+      .card-component .card-container.card-bl .card-jewel-svg {
+        fill: blue; }
+    .card-component .card-container .card-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-sizing: border-box;
+      padding: 0.5rem;
+      width: 100%;
+      height: 25%;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 5px 5px 0 0; }
+      .card-component .card-container .card-head .card-pts {
+        font-size: 3vh;
+        font-weight: bold;
+        width: 20%;
+        color: black;
+        text-shadow: 0px 0px 6px #ffffff;
+        text-align: center;
+        font-family: 'Norican', cursive; }
+      .card-component .card-container .card-head .card-jewel {
+        width: 20%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; }
+        .card-component .card-container .card-head .card-jewel.bk {
+          background-image: url("./images/jewels/bk.png"); }
+        .card-component .card-container .card-head .card-jewel.wh {
+          background-image: url("./images/jewels/wh.png"); }
+        .card-component .card-container .card-head .card-jewel.re {
+          background-image: url("./images/jewels/re.png"); }
+        .card-component .card-container .card-head .card-jewel.gr {
+          background-image: url("./images/jewels/gr.png"); }
+        .card-component .card-container .card-head .card-jewel.bl {
+          background-image: url("./images/jewels/bl.png"); }
+    .card-component .card-container .card-body {
+      box-sizing: border-box;
+      height: 75%;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; }
+      .card-component .card-container .card-body .token {
+        position: relative;
+        border-radius: 50%;
+        width: 18%;
+        margin-top: 5%;
+        padding-top: 18%;
+        height: 0; }
+        .card-component .card-container .card-body .token.bk {
+          background-color: black;
+          color: white; }
+        .card-component .card-container .card-body .token.wh {
+          background-color: oldlace;
+          color: black; }
+        .card-component .card-container .card-body .token.re {
+          background-color: red;
+          color: white; }
+        .card-component .card-container .card-body .token.gr {
+          background-color: green;
+          color: white; }
+        .card-component .card-container .card-body .token.bl {
+          background-color: blue;
+          color: white; }
+        .card-component .card-container .card-body .token .count {
+          font-weight: bold;
+          position: absolute;
+          top: calc(50% - 1.2vh);
+          width: 100%;
+          text-align: center;
+          font-size: 2vh; }

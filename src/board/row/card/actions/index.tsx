@@ -1,6 +1,6 @@
 import React, { MouseEvent } from 'react';
 import { Board, Player, Card, Clr } from '../../../../types';
-import './actions.scss';
+import './actions.css';
 
 const calcIfCanBuy = (player: Player, card: Card): boolean => {
   return (

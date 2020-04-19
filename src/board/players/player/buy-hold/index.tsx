@@ -2,7 +2,7 @@ import React, { MouseEvent } from 'react';
 import { Player, Clr, Board } from '../../../../types';
 import ResourceComponent from '../resource';
 import HoldViewerComponent from './hold-viewer';
-import './buy-hold.scss';
+import './buy-hold.css';
 
 interface IProps {
   show: boolean;

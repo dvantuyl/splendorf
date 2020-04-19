@@ -2,7 +2,7 @@ import React from 'react';
 import { Player, Clr, Board } from '../../../types';
 import ResourceComponent from './resource';
 import BuyHoldComponent from './buy-hold';
-import './player.scss';
+import './player.css';
 
 interface IProps {
   i: number;
@@ -73,10 +73,11 @@ export default class PlayerComponent extends React.Component<IProps, IState> {
         toggleShowBuyHold={this.toggleShowBuyHold}
       />
     ));
+    const className = `player-component ${isCurrentPlayer ? 'current' : ''} ${this.props.board.isActive ? 'active' : ''}`;
     return (
       <div
         id={id}
-        className={`player-component ${isCurrentPlayer ? 'current' : ''}`}
+        className={className}
       >
         <div className="player-head">
           <div className="name">Player {this.props.i + 1}</div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Clr, Board } from '../../../types';
 import ActionsComponent from './actions';
-import './card.scss';
+import './card.css';
 
 type Token = { clr: Clr; cost: number };
 interface IProps {

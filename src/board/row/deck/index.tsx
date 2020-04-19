@@ -1,6 +1,6 @@
 import React from 'react';
 import { Board } from '../../../types';
-import './deck.scss';
+import './deck.css';
 
 export default (props: { i: number; board: Board }) => {
   const id = `deck-component-${props.i}`;

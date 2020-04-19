@@ -1,0 +1,101 @@
+.player-component {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(25% - 0.75rem);
+  border-radius: 5px; }
+
+@keyframes Pulse {
+  0% {
+    box-shadow: 0 0 0 white; }
+  50% {
+    box-shadow: 0 0 10px white; }
+  100% {
+    box-shadow: 0 0 0 white; } }
+
+@keyframes Warn {
+  0% {
+    box-shadow: 0 0 0 #fe0100; }
+  50% {
+    box-shadow: 0 0 20px #fe0100; }
+  100% {
+    box-shadow: 0 0 0 #fe0100; } }
+
+@keyframes BigTen {
+  0% {
+    visibility: visible;
+    font-size: 0vh;
+    opacity: 1; }
+  80% {
+    visibility: visible;
+    font-size: 20vh;
+    opacity: 1; }
+  100% {
+    visibility: hidden;
+    font-size: 20vh;
+    opacity: 0; } }
+
+.player-component:not(:first-child) {
+  margin-top: 1rem; }
+
+.player-component.current {
+  box-shadow: 0 0 10px white; }
+
+.player-component.current.active {
+  animation: Pulse 1s ease infinite; }
+
+.player-component .player-head {
+  height: 25%;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.player-component .player-head .name {
+  font-family: 'Norican', cursive;
+  font-size: 3vh;
+  font-weight: bold;
+  text-shadow: 0px 0px 6px #ffffff; }
+
+.player-component .player-head .score {
+  color: black;
+  text-shadow: 0px 0px 6px #ffffff;
+  text-align: right;
+  font-family: 'Norican', cursive;
+  font-size: 3vh;
+  font-weight: bold; }
+
+.player-component .player-body {
+  position: relative;
+  height: 75%;
+  box-sizing: border-box;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 0 5px 5px; }
+
+.player-component .player-body .resource-components {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between; }
+
+.player-component .player-body .resource-components.show {
+  display: flex; }
+
+.player-component .player-body .resource-components.hide {
+  display: none; }
+
+.player-component .player-body .big-ten {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: rgba(254, 1, 0, 0.5);
+  animation: BigTen 2s ease 1; }

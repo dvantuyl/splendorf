@@ -1,0 +1,51 @@
+.hold-viewer-component {
+  box-sizing: border-box;
+  width: 80%;
+  height: 100%;
+  padding-left: 0.5rem;
+  display: flex;
+  justify-content: flex-end; }
+  .hold-viewer-component .left-arrow,
+  .hold-viewer-component .right-arrow {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-size: 2vw; }
+    .hold-viewer-component .left-arrow:hover,
+    .hold-viewer-component .right-arrow:hover {
+      color: white;
+      transform: scale(1.2); }
+    .hold-viewer-component .left-arrow.show,
+    .hold-viewer-component .right-arrow.show {
+      visibility: visible; }
+    .hold-viewer-component .left-arrow.hide,
+    .hold-viewer-component .right-arrow.hide {
+      visibility: hidden; }
+  .hold-viewer-component .left-arrow {
+    transform: rotate(180deg); }
+    .hold-viewer-component .left-arrow:hover {
+      transform: rotate(180deg) scale(1.2); }
+  .hold-viewer-component .hold-collection-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 60%; }
+    .hold-viewer-component .hold-collection-container .card-component {
+      width: 80%;
+      height: 100%;
+      box-shadow: none; }
+      .hold-viewer-component .hold-collection-container .card-component:hover {
+        transform: none; }
+      .hold-viewer-component .hold-collection-container .card-component .card-head,
+      .hold-viewer-component .hold-collection-container .card-component .card-body {
+        padding: 0.2rem; }
+      .hold-viewer-component .hold-collection-container .card-component .card-head .card-pts {
+        font-size: 2vh; }
+      .hold-viewer-component .hold-collection-container .card-component .card-body .token .count {
+        font-size: 1.5vh; }
+      .hold-viewer-component .hold-collection-container .card-component .card-actions-component {
+        visibility: visible; }
+        .hold-viewer-component .hold-collection-container .card-component .card-actions-component .btn {
+          padding: 0.5vh 0.3vw;
+          font-size: 1vw; }

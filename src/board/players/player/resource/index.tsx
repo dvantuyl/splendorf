@@ -1,6 +1,6 @@
 import React, { MouseEvent } from 'react';
 import { Player, Clr } from '../../../../types';
-import './resource.scss';
+import './resource.css';
 
 export default (props: {
   clr: Clr;

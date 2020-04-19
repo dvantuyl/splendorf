@@ -1,7 +1,7 @@
 import React from 'react';
 import { City, GameState } from '../../types';
 import CityComponent from './city';
-import './cities.scss';
+import './cities.css';
 
 export default (props: { G: GameState }) => {
   const cityComponents = props.G.top.map((city: City) => {

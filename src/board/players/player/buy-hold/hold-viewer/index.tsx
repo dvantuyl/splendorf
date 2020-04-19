@@ -1,7 +1,7 @@
 import React, { MouseEvent } from 'react';
 import { Player, Clr, Board } from '../../../../../types';
 import CardComponent from '../../../../row/card';
-import './hold-viewer.scss';
+import './hold-viewer.css';
 
 interface IProps {
   player: Player;

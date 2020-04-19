@@ -1,0 +1,14 @@
+.buy-hold-component {
+  width: 100%;
+  height: 100%; }
+  .buy-hold-component.show {
+    display: flex; }
+  .buy-hold-component.hide {
+    display: none; }
+  .buy-hold-component .resource-components-mini {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer; }

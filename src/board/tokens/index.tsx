@@ -1,7 +1,7 @@
 import React from 'react';
 import { GameState, Clr } from '../../types';
 import TokenComponent from './token';
-import './tokens.scss';
+import './tokens.css';
 
 export default (props: {
   selectToken: (clr: Clr) => void;

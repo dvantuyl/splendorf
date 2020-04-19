@@ -1,6 +1,6 @@
 import React, { MouseEvent } from 'react';
 import { Clr } from '../../../types';
-import './token.scss';
+import './token.css';
 
 export default (props: {
   clr: Clr;

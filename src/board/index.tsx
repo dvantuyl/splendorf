@@ -4,7 +4,7 @@ import CitiesComponent from './cities';
 import RowComponent from './row/';
 import TokensComponent from './tokens/';
 import PlayersComponent from './players';
-import './board.scss';
+import './board.css';
 
 interface IState {
   selectedTokens: Array<Clr>;

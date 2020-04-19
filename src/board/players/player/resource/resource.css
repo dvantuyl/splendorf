@@ -1,0 +1,85 @@
+.resource-component {
+  display: flex; }
+  .resource-component.flex-row {
+    width: 100%;
+    height: 15%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5vh; }
+    .resource-component.flex-row .token {
+      width: 40%; }
+    .resource-component.flex-row .card {
+      height: 100%;
+      width: 35%; }
+  .resource-component.flex-col {
+    width: 12%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vh; }
+    .resource-component.flex-col .token,
+    .resource-component.flex-col .card {
+      width: 100%; }
+    .resource-component.flex-col .card {
+      height: 35%; }
+  .resource-component .token {
+    border-radius: 50%; }
+    .resource-component .token:after {
+      content: '';
+      display: block;
+      padding-bottom: 100%; }
+  .resource-component .card {
+    border-radius: 5px; }
+    .resource-component .card.go {
+      cursor: pointer; }
+      .resource-component .card.go:hover {
+        transform: scale(1.2);
+        box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.24); }
+  .resource-component .token,
+  .resource-component .card {
+    position: relative;
+    cursor: not-allowed; }
+    .resource-component .token.hide,
+    .resource-component .card.hide {
+      visibility: hidden; }
+    .resource-component .token.selectable,
+    .resource-component .card.selectable {
+      cursor: pointer;
+      transform: scale(1.2);
+      box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.24); }
+      .resource-component .token.selectable.warn,
+      .resource-component .card.selectable.warn {
+        animation: Warn 1s ease infinite; }
+    .resource-component .token.bk,
+    .resource-component .card.bk {
+      background-color: black;
+      color: white; }
+    .resource-component .token.wh,
+    .resource-component .card.wh {
+      background-color: oldlace;
+      color: black; }
+    .resource-component .token.re,
+    .resource-component .card.re {
+      background-color: red;
+      color: white; }
+    .resource-component .token.gr,
+    .resource-component .card.gr {
+      background-color: green;
+      color: white; }
+    .resource-component .token.bl,
+    .resource-component .card.bl {
+      background-color: blue;
+      color: white; }
+    .resource-component .token.go,
+    .resource-component .card.go {
+      background-color: goldenrod;
+      color: white; }
+    .resource-component .token .count,
+    .resource-component .card .count {
+      font-weight: bold;
+      position: absolute;
+      top: calc(50% - 1.2vh);
+      width: 100%;
+      text-align: center; }

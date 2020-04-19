@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Board, Clr } from '../../types';
 import DeckComponent from './deck';
 import CardComponent from './card';
-import './row.scss';
+import './row.css';
 
 export default (props: {
   i: number;

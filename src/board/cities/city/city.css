@@ -1,0 +1,50 @@
+.city-component {
+  background-image: url("../../../assets/images/cities.jpg");
+  background-repeat: no-repeat;
+  height: 145px;
+  width: 340px;
+  transform: scale(0.95);
+  border-radius: 5px;
+  box-shadow: 0px 6px 15px 2px rgba(0, 0, 0, 0.24); }
+
+#city-component-0 {
+  background-position: 0 0; }
+
+#city-component-1 {
+  background-position: -341px 0; }
+
+#city-component-2 {
+  background-position: -683px 0; }
+
+#city-component-3 {
+  background-position: 0 -145px; }
+
+#city-component-4 {
+  background-position: -341px -145px; }
+
+#city-component-5 {
+  background-position: -683px -145px; }
+
+#city-component-6 {
+  background-position: -0 -290px; }
+
+#city-component-7 {
+  background-position: -341px -290px; }
+
+#city-component-8 {
+  background-position: -683px -290px; }
+
+#city-component-9 {
+  background-position: 0 -435px; }
+
+#city-component-10 {
+  background-position: -341px -435px; }
+
+#city-component-11 {
+  background-position: -683px -435px; }
+
+#city-component-12 {
+  background-position: 0 -580px; }
+
+#city-component-13 {
+  background-position: -341px -580px; }

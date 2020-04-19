@@ -1,7 +1,7 @@
 import React from 'react';
 import { Clr, Board } from '../../types';
 import PlayerComponent from './player';
-import './players.scss';
+import './players.css';
 
 export default (props: {
   selectedTokens: Array<Clr>;
