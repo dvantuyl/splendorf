@@ -4,6 +4,7 @@ import { selectTokens, buyCard, holdCard, buyHold } from './moves';
 import { cities as endIf } from './win-conditions';
 
 export default {
+  name: 'splendorf',
   setup,
   moves: {
     selectTokens,
